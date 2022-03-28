@@ -98,6 +98,7 @@ new_loan = {
 #    The function should return the `present_value` for the loan.
 # YOUR CODE HERE!
 
+
 price = new_loan["loan_price"]
 future_value = new_loan["future_value"]
 remaining_months = new_loan["remaining_months"]
@@ -107,10 +108,7 @@ def present_val_calc(future, remaining, annual_disc):
     presentval = [future / (1 + annual_disc / 12) ** remaining]
     return presentval
 
-present_val_calc(future_value, remaining_months, annual_discount_rate)
-print(f'The present value is ${presentval:.2f}')
-
-
+print(present_val_calc(future_value,remaining_months,annual_discount_rate))
 
 # how do i round this?
 
